@@ -16,7 +16,7 @@ You need to point your GTA III Directory `GTAIII_DIR` in `Plugin-SDK Environment
 - [Plugin-SDK](https://github.com/DK22Pac/plugin-sdk)
 
 # Build
-- Assuming you have Visual Studio 2019 & Plugin-SDK.
+- Assuming you have Visual Studio 2017 & Plugin-SDK.
 - Clone the repository with `git clone --recursive https://github.com/Huga22118/Suicide-Claude.git`.
 - Open `installer-launcher.exe` and Setup `Plugin-SDK Environtment Variable` in your plugin-sdk directory.
 - Install Plugin-SDK Template and Generate solution.
