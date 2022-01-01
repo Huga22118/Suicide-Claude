@@ -26,6 +26,8 @@ You need to point your GTA III Directory `GTAIII_DIR` in `Plugin-SDK Environment
 - Build the source code.
 - Enjoy the mod.
 
+Skip step 3-6 if you have Plugin-SDK Installed
+
 Sorry for Bad english :) 
 
 # Hotkeys
