@@ -10,6 +10,7 @@
 #include "plugin.h"
 #include "common.h"
 #include "CTimer.h"
+#include "CVehicle.h"
 
 using namespace plugin;
 
@@ -28,12 +29,16 @@ public:
 			{
 				keyPressTime = CTimer::m_snTimeInMilliseconds;
 				suicide->m_fHealth = 0.0f;
-
-				if (suicidevehicle)
-				{
-					((CAutomobile*)suicidevehicle)->BlowUpCar(suicide);
-				}
+				suicide->m_fArmour = 0.0f;
 			}
-		};   
+			if (suicidevehicle && KeyPressed(VK_LCONTROL) && KeyPressed(VK_NUMPAD5)
+				&& CTimer::m_snTimeInMilliseconds - keyPressTime > 1000)
+			{
+				keyPressTime = CTimer::m_snTimeInMilliseconds;
+				((CAutomobile*)suicidevehicle)->BlowUpCar(suicide);
+			}
+
+		};
+		   
     }
 } suicide;
